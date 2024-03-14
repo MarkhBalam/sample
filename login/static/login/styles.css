@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://as2.ftcdn.net/v2/jpg/00/97/65/55/1000_F_97655541_XIWgpNQy0RxkXxnkcGxA3MMkcZCSExCb.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #e74c3c;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.business-image {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button,
+.sign-up-button {
+  color: #fff;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.form-group button {
+  background-color: #2ecc71;
+}
+
+.sign-up-button {
+  background-color: #e74c3c;
+  margin-top: 5px;
+}
+
+.sign-up-button:hover {
+  background-color: #c0392b;
+}
