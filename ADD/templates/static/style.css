@@ -1,0 +1,72 @@
+.add-product {
+  width: 100%;
+ background: linear-gradient(to top, rgb(9, 188, 99)), url('image.jpg');
+ background-position: center;
+ background-size: cover;
+ height: 109vh;
+
+}
+.logo {
+  color: rgba(12, 32, 212, 0.5);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+
+.back-icon {
+  display: inline-flex;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: blue;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.drag-area {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px ;
+}
+
+
+.add-product th, .add-product td {
+  border: 1px solid #7153b7;
+  padding: 8px;
+}
+
+.add-product th {
+  text-align: left;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.add-product tr {
+  color: #333;
+  background-color: whitesmoke;
+}
+
+.add-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
