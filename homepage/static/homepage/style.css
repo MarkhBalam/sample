@@ -1,0 +1,94 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, 'Lucida Sans', Georgia, 'Comic Sans MS', sans-serif;
+}
+
+.header {
+  background-color: plum; /* White header background */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 24px;
+  color: #007bff; /* Bootstrap primary color */
+  font-weight: bold;
+}
+.search-bar {
+  flex-grow: 1;
+  margin: 0 15px;
+  padding: 5px;
+}
+.carousel-container {
+  margin: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: orange; /* Change background color to orange */
+}
+.carousel {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  transition: transform 0.5s ease;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+.carousel-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color:black;
+}
+.products-container {
+  padding: 20px;
+  background-color:silver; /* Navy blue background */
+}
+.products-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color */
+  border-bottom: 2px solid #007bff; /* Border under the header */
+  padding-bottom: 10px; /* Add some space between the header and products */
+}
+.product-section {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.product-details {
+  margin-top: 10px;
+  color: #6c757d; /* Bootstrap secondary color */
+}
+.product-img {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.rating-stars {
+  color: #ffc107; /* Bootstrap warning color for stars */
+}
+footer {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+.popular-products-heading {
+  font-size: 32px; /* Adjust font size as needed */
+  color: #007bff; /* Bootstrap primary color */
+  font-weight: bold;
+  text-transform: uppercase; /* Convert text to uppercase */
+}
