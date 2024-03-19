@@ -18,33 +18,7 @@ body {
   margin: 0 15px;
   padding: 5px;
 }
-.carousel-container {
-  margin: 20px 0;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  background-color: orange; /* Change background color to orange */
-}
-.carousel {
-  display: flex;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  transition: transform 0.5s ease;
-}
-.carousel img {
-  width: 100%;
-  height: auto;
-}
-.carousel-button {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  padding: 5px 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  background-color:black;
-}
+
 .products-container {
   padding: 20px;
   background-color:silver; /* Navy blue background */
@@ -92,3 +66,18 @@ footer {
   font-weight: bold;
   text-transform: uppercase; /* Convert text to uppercase */
 }
+
+.banner-container {
+  background-color:yellowgreen; /* Replace with your desired background color */
+  padding: 20px; /* Optional: Add padding to create space around the image */
+}
+.banner-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.big-heading {
+  font-size: 65px; /* Adjust font size as needed */
+  margin-left: 20px; /* Add space between the image and heading */
+}
+
