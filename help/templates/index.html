@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP CENTER</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+    <a href="index.html"><a href='{% url "home"%}'>Back to Home</a>
+    <div class="container">
+        <h1>HELP CENTER</h1>
+        <form action="submit_message.php" method="post">
+            <label for="userMessage">Describe your problem:</label>
+            <textarea id="userMessage" name="userMessage" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Or call our service providers at: <a href="tel:+2560755464416">+2 (560) 755464416</a></p>
+        
+    </div>
+</body>
+</html>
