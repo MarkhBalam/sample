@@ -6,7 +6,7 @@ body {
 .header {
   background-color: plum; /* White header background */
   padding: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px #0000001a;
 }
 .logo {
   font-size: 24px;
