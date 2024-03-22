@@ -5,4 +5,4 @@ def add(request):
       return render(request, 'add-product.html')
 
 def order(request):
-      return render(request, 'order-product.html')
+      return render(request, 'order-status.html')
