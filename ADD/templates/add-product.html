@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>ADD PRODUCT</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
   </head>
   <body>
     <a href="index.html"><a href='{% url "home"%}'>Back to Home</a>
@@ -17,7 +17,7 @@
           <div class="add-product">
             <table>
               <tr>
-                <td><label for="category">Category:</label></td>
+                <td><label for="category">Category:</label></td >
                 <td>
                   <select id="category" name="category" required>
                     <option value="">Select a category</option>
@@ -25,6 +25,7 @@
                     <option value="books">Books</option>
                     <option value="clothing">Clothing</option>
                     <option value="home_garden">Home & Garden</option>
+                    <option value="clothing">Jewellery</option>
                     <option value="other">Other</option>
                   </select>
                 </td>
