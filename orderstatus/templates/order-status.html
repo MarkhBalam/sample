@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <title>ORDER STATUS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
   </head>
   <body>
     <a href="../"><input type="button" value="Back"></a>
@@ -27,6 +29,7 @@
                     <div class="info">
                       <span class="currency-symbol">$</span><input type="number" name="new_item_price" placeholder="price">
                       <input type="date" name="new_item_date" placeholder="dd/mm/yy">
+                      <input type="text" id="description" name="description" placeholder="DESCRIPTION" required>
                     </div>
                   </div>
                 </td>
@@ -35,7 +38,8 @@
                     <div class="product-image-box"></div>
                     <div class="info">
                       <span class="currency-symbol">$</span><input type="number" name="new_item_price" placeholder="price">
-                      <input type="date" name="new_item_date" placeholder="dd/mm/yy">
+                      <input type="date" name="new_item_date" placeholder="dd/mm/yy" >
+                      <input type="text" id="description" name="description" placeholder="DESCRIPTION" required>
                     </div>
                   </div>
                 </td>
@@ -43,13 +47,15 @@
                   <div style="display: flex; flex-direction: row; gap:20px; flex:1;">
                     <div class="product-image-box"></div>
                     <div class="info">
-                      <span class="currency-symbol">$</span><input type="number" name="new_item_price" placeholder="price">
-                      <input type="date" name="new_item_date" placeholder="dd/mm/yy">
+                      <span class="currency-symbol">$</span><input type="number" name="new_item_price" placeholder="price" >
+                      <input type="date" name="new_item_date" placeholder="dd/mm/yy" >
+                      <input type="text" id="description" name="description" placeholder="DESCRIPTION" required>
                     </div>
                   </div>
                 </td>
               </tr>
             </table>
+            
           </div>
         </div>
       </div>

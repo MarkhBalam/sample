@@ -23,4 +23,5 @@ urlpatterns = [
     path('base/home/', include('help.urls')),
     path('base/home/help/', include('My_account.urls')),
     path('', include('homepage.urls')),
+    path('ADD', include("ADD.urls")),
 ]

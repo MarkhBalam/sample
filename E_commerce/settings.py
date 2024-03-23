@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'help',
     'My_account',
      'ADD',
+    'orderstatus',
+    'ADD',
     'login',
     'django.contrib.admin',
     'django.contrib.auth',
