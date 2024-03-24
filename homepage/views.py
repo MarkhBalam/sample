@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-def home(request):
+def homepage(request):
     return render(request, 'homepage/index.html')
 
 # def add_product(request):
