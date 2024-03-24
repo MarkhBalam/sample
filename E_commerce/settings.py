@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     'homepage',
     'help',
     'My_account',
+<<<<<<< HEAD
+=======
+     'ADD',
+>>>>>>> 0b0ad4f85f636747da0ef5f12f9f4f6bbb260523
     'orderstatus',
     'ADD',
     'login',

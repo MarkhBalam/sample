@@ -19,9 +19,17 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
 path('base/home/help/My_account/', include("ADD.urls")),
 path('base/home/', include('help.urls')),
 path('base/home/help/', include('My_account.urls')),
 path('', include('homepage.urls')),
 
+=======
+    path('base/home/help/My_account/', include("ADD.urls")),
+    path('base/home/', include('help.urls')),
+    path('base/home/help/', include('My_account.urls')),
+    path('', include('homepage.urls')),
+    path('ADD', include("ADD.urls")),
+>>>>>>> 0b0ad4f85f636747da0ef5f12f9f4f6bbb260523
 ]
