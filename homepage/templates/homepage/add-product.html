@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADD PRODUCT</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="../"><input type="button" value="Back"></a>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">         
+          <h2 class="logo"> ADD PRODUCT</h2>
+          
+          <div class="menu">
+            
+          </div>
+          <div class="add-product">
+            <form  action="{% url 'addproduct' %}" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              <tr>
+                <td><label for="category">Category:</label></td>
+                <td>
+                  <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="books">Books</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home_garden">Home & Garden</option>
+                    <option value="other">Other</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="productImage">Product Image:</label></td>
+                <td>
+                  <div class="drag-area">
+                    <input type="file" id="productImage" name="productImage" required>
+                    <p>Drag and drop an image or click to select a file.</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="productName">Product Name:</label></td>
+                <td><input type="text" id="productName" name="productName" required></td>
+              </tr>
+              <tr>
+                <td><label for="price">Price:</label></td>
+                <td><input type="number" id="price" name="price" required></td>
+              </tr>
+              
+              <tr>
+                <th> Discount</th>
+                <td><input type="percentage" value="0%" name="discount"></td>
+              </tr>
+              <tr>
+                <td><label for="description">DESCRIPTION:</label></td>
+                <td><input type="text" id="description" name="description" required></td>
+              </tr>
+              <button colspan="2", class="add-btn"><input type="submit" value="Add Product"></button>
+            </form>
+  
+          </div>
+        
+      </div>
+    </div>
+  </body>
+
+
+</html>
+  
+  

@@ -1,16 +1,36 @@
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.shortcuts import render,redirect
+from .models import Add_Product
 
+# Create your views here.
 def homepage(request):
-    return render(request, 'homepage/index.html')
 
-# def add_product(request):
-#     return render(request, 'add_product.html')
+    return render(request,"homepage/index.html",{
+      "products": Add_Product.objects.all()  
+    })
 
-# def order_status(request):
-#     return render(request, 'order_status.html')
+def addproduct(request):
+    if request.method =="POST":
+        category = request.POST['category']
+        productImage = request.FILES['productImage']
+        productName = request.POST['productName']
+        price = request.POST['price']
+        discount= request.POST['discount']
+        description = request.POST['description']
 
-# def account(request):
-#     return render(request, 'account.html')
+        new_product = Add_Product.objects.create(
+            category=category,
+            productImage = productImage,
+            productName=productName,
+            price=price,
+            discount=discount,
+            description=description
+            
+        )
+        new_product.save()
+        
+        # Redirect to a success page or wherever you need
+        #return HttpResponseRedirect('homepage/index.html')
+        return redirect('homepage')
 
-# def help(request):
-#     return render(request, 'help.html')
+    return render(request,"homepage/add-product.html",{})
