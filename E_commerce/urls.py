@@ -24,6 +24,10 @@ urlpatterns = [
     path('',include('login.urls')),
     path('homepage/',include('homepage.urls')),
     path('admin/', admin.site.urls),
+    path('help/',include('help.urls')),
+    path('My_account/',include('My_account.urls')),
+    path('orderstatus/',include("orderstatus.urls")),
+    path('business-login/', include('login.urls')), 
 ]
 
 if settings.DEBUG:

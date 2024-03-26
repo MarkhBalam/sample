@@ -136,7 +136,5 @@ def activate(request,uidb64,token):
         return render(request,'activation_failed.html')
     
     # eanT7Ew=24bR+afm
-from django.shortcuts import render
-
 def business_login(request):
-    return render(request, 'login.html')
+    return render(request, 'login/signin.html')
