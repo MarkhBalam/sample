@@ -34,3 +34,5 @@ def addproduct(request):
         return redirect('homepage')
 
     return render(request,"homepage/add-product.html",{})
+def index(request):
+    return render(request, 'index.html')
