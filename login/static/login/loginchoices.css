@@ -1,7 +1,7 @@
 /* Custom styling for the buttons */
 button {
   margin: 10px;
-  padding: 15px 30px; /* Increased padding */
+  padding: 10px 20px; /* Increased padding */
   font-size: 20px; /* Increased font size */
   border-radius: 5px;
   background-color: #007bff;
@@ -28,3 +28,8 @@ h1 {
   text-transform: uppercase; /* Added text transformation */
   font-family: 'Arial', sans-serif; /* Added font family */
 }
+.btn.btn-primary {
+  padding: 15px 30px; /* Increased padding */
+  font-size: 20px; /* Increased font size */
+}
+
