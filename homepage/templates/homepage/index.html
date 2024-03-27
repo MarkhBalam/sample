@@ -44,21 +44,23 @@
         <div class="container">
             <div class="products-header">Available Products</div>
             <div class="row">
-                <div class="col-md-4">
-                    {%for product in products %}
+                {% for product in products %}
+                <div class="col-md-4 mb-4">
                     <section class="product-section">
-                        
-                        <img src="{{product.productImage.url}}" alt="{{product.productName}}" class="img-fluid product-img">
+                        <img src="{{ product.productImage.url }}" alt="{{ product.productName }}" class="img-fluid product-img">
                         <div class="product-details">
-                            <p class="fw-bold fs-5">Name: {{product.productName}}</p> 
-                            <p class="fs-6">Price: {{product.price}}</p>
-                            <p class="fs-6">Discount: {{product.discount}}</p>
+                            <p class="fw-bold fs-5">Name: {{ product.productName }}</p>
+                            <p class="fs-6">Price: {{ product.price }}</p>
+                            <p class="fs-6">Discount: {{ product.discount }}</p>
                             <p class="fs-6 rating-stars">Rating: ★★★★☆</p>
                         </div>
-                        
                     </section>
-                    {% endfor %}
                 </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <div class="container">
             <p>Location :Makerere University. </p>
