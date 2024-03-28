@@ -28,3 +28,13 @@ class OrderStatus(models.Model):
 
     def __str__(self):
         return f"{self.order.description} - {self.get_status_display()}"
+
+
+
+class YourModel(models.Model):
+    # Define fields for YourModel
+    field1 = models.CharField(max_length=100)
+    field2 = models.IntegerField()
+
+    def __str__(self):
+        return self.field1

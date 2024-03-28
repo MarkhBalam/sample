@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Detail</title>
+</head>
+<body>
+    <h1>Order Detail</h1>
+    <p>Description: {{ order.description }}</p>
+    <p>Price: {{ order.price }}</p>
+    <p>Date: {{ order.date }}</p>
+    <h2>Order Statuses</h2>
+    <ul>
+    {% for order_status in order_statuses %}
+        <li>{{ order_status.get_status_display }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
